@@ -29,7 +29,13 @@ for x in animals_in_kennel:
   if len(x)==4:
     print(x)
 
+# simplest way to produce output
 
+for animal in animals_in_kennel:
+  for k,v in animal.items():
+      print(f'Key "{k}" = {v}')
+
+# Output
 # Key "id" = 1
 # Key "breed" = German Shepherd
 # Key "age" = 3
